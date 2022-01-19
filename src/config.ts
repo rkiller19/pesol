@@ -25,10 +25,10 @@ const configurations: {[env: string]: Configuration} = {
   //   refreshInterval: 10000,
   // },
   development: {
-    chainId: 56,
-    networkName: 'BSC Mainnet',
-    ftmscanUrl: 'https://bscscan.com',
-    defaultProvider: 'https://bsc-dataseed.binance.org/',
+    chainId: 250,
+    networkName: 'FTM Mainnet',
+    ftmscanUrl: 'https://ftmscan.com/',
+    defaultProvider: '',
     deployments: require('./bomb-finance/deployments/deployments.mainnet.json'),
     externalTokens: {
       WBNB: ['0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18],
@@ -42,7 +42,7 @@ const configurations: {[env: string]: Configuration} = {
       SHIBA: ['0x9ba3e4f84a34df4e08c112e1a0ff148b81655615', 9],
       'USDT-BNB-LP': ['0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16', 18],
       'USDT-BTCB-LP': ['0x3f803ec2b816ea7f06ec76aa2b6f2532f9892d62', 18],
-      'BOMB-BTCB-LP': ['0x84392649eb0bC1c1532F2180E58Bae4E1dAbd8D6', 18],
+      'BOMB-BTCB-LP': ['0x801eedd8c67e9599d2c61c47279d6966540b0fb4', 18],
       'BOMB-BNB-LP': ['0x107CDC0c46615C63EE4abC4E1e264D3BD12390e6', 18],
       'BSHARE-BNB-LP': ['0x1303246855b5B5EbC71F049Fdb607494e97218f8', 18],
       'BSHARE-BNB-APELP': ['0x0dE2a71b2f43CF588A00422d41E1C02D0E08D552', 18],
@@ -54,9 +54,9 @@ const configurations: {[env: string]: Configuration} = {
     refreshInterval: 10000,
   },
   production: {
-    chainId: 56,
-    networkName: 'BSC Mainnet',
-    ftmscanUrl: 'https://bscscan.com',
+    chainId: 250,
+    networkName: 'FTM Mainnet',
+    ftmscanUrl: 'https://ftmscan.com/',
     defaultProvider: 'https://bsc-dataseed.binance.org/',
     deployments: require('./bomb-finance/deployments/deployments.mainnet.json'),
     externalTokens: {
